@@ -17,10 +17,9 @@ const Navbar = () => {
     </>
   )
 
-
   return (
-    <div className='shadow-sm'>
-      <div className="navbar bg-base-100  w-11/12 mx-auto">
+    <div className='bg-base-100 shadow-sm'>
+      <div className="navbar   w-11/12 mx-auto">
         <div className="navbar-start flex gap-2">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="lg:hidden">
@@ -36,7 +35,7 @@ const Navbar = () => {
 
           </div>
           {/* Website Logo */}
-          <h2 className="text-xl md:text-2xl font-bold">Book Vibe</h2>
+          <h2 className="text-xl md:text-2xl font-bold transition-all md:hover:scale-105 duration-500">Book Vibe</h2>
         </div>
         <div className="navbar-center hidden lg:flex">
 
@@ -46,8 +45,8 @@ const Navbar = () => {
 
         </div>
         <div className="navbar-end gap-2">
-          <button className="btn btn-sm md:btn-md bg-[#03C755] text-white border-[#00b544]">Signin</button>
-          <button className="btn btn-sm md:btn-md bg-[#1A77F2] text-white border-[#005fd8]">Signup</button>
+          <button className="btn btn-sm md:btn-md bg-[#03C755] text-white border-[#00b544] transition-all md:hover:scale-105 duration-500">Signin</button>
+          <button className="btn btn-sm md:btn-md bg-[#1A77F2] text-white border-[#005fd8] transition-all md:hover:scale-105 duration-500">Signup</button>
         </div>
       </div>
     </div>

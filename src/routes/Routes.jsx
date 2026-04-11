@@ -1,23 +1,27 @@
-
 import MainLayout from '../layout/MainLayout';
 import Homepage from '../pages/homepage/Homepage';
 import Books from '../pages/books/Books';
 import { createBrowserRouter } from 'react-router';
 import ErrorPage from '../pages/errorPage/ErrorPage';
 
-export const router = createBrowserRouter([{
-  path: "/",
-  element: <MainLayout/>,
-  children: [
-    {
-      index: true,
-      element: <Homepage/>
-    },
-    {
-      path: '/books',
-      element: <Books/>
-    }
-  ],
-  errorElement: <ErrorPage/>
-}
-]);
+export const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <MainLayout />,
+    children: [
+      {
+        index: true,
+        element: <Homepage />
+      },
+      {
+        path: '/books',
+        element: <Books />
+      }
+    ],
+    errorElement: <ErrorPage />
+  }
+],
+  {
+    basename: "/book-vibe"
+  }
+);
